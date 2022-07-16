@@ -1,2 +1,2 @@
-# Codeforces
-The repo for the Codeforces programming problems I have solved. 
+# Programming Problems
+The repo for the various programming problems I have solved. 
