@@ -353,3 +353,6 @@ MigrationBackup/
 leetcode-csharp/.vscode/launch.json
 leetcode-csharp/.vscode/tasks.json
 leetcode-csharp/leetcode-csharp.csproj
+codeforces-csharp/.vscode/launch.json
+.gitignore
+codeforces-csharp/.vscode/tasks.json
