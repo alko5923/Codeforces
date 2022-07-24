@@ -1,16 +1,12 @@
 public class SolutionSalary {
     public double Average(int[] salary) {
-        Array.Sort(salary);
-        double arraySum = 0;
-        double averageSalary = 0;
-        
-        for (int i = 1; i < salary.Length-1; i++)
-        {
-            arraySum += salary[i];
-        }
-        
+        double totalSum = salary.Sum();
+        int minSalary = salary.Min();
+        int maxSalary = salary.Max();
+
+        totalSum = totalSum - minSalary - maxSalary;
         int length = salary.Length-2;
-        averageSalary = arraySum / length;
+        double averageSalary = totalSum / length;
         return averageSalary;
     }
 
