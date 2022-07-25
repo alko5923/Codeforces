@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            SolutionBits solution = new SolutionBits();
-            uint n = 9;
-            int result = solution.HammingWeight(n);
+            SolutionDigitsInteger solution = new SolutionDigitsInteger();
+            int n = 234;
+            int result = solution.SubtractProductAndSum(n);
             Console.WriteLine(result);
         }
     }
