@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            SolutionSalary solution = new SolutionSalary();
-            int[] salary = new int[] {4000,3000,1000,2000};
-            double result = solution.Average(salary);
+            SolutionBits solution = new SolutionBits();
+            uint n = 4294967293;
+            int result = solution.HammingWeight(n);
             Console.WriteLine(result);
         }
     }
