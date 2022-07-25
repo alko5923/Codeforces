@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             SolutionBits solution = new SolutionBits();
-            uint n = 4294967293;
+            uint n = 9;
             int result = solution.HammingWeight(n);
             Console.WriteLine(result);
         }

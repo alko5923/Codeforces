@@ -2,15 +2,11 @@ public class SolutionBits
 {
     public int HammingWeight(uint n)
     {
-        String nString = Convert.ToString(n, 2);
         int count = 0;
-
-        foreach (char c in nString)
+        while (n!=0)
         {
-            if (c == '1')
-            {
-                count++;
-            } 
+            n = n & (n-1);
+            count ++;
         }
         return count;
     }
