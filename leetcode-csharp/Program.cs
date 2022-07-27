@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            SolutionPerimeter solution = new SolutionPerimeter();
+            SolutionLargestPerimeter solution = new SolutionLargestPerimeter();
             int[] nums = new int[] {1,2,1};
             int result = solution.LargestPerimeter(nums);
             Console.WriteLine(result);

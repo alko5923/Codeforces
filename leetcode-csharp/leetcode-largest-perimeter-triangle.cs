@@ -1,25 +1,16 @@
-public class SolutionPerimeter 
-{
-    public int LargestPerimeter(int[] nums)
-    {
+public class SolutionLargestPerimeter {
+    // Sort the array. For any c in the array, we choose the largest
+    // possible a <= b <= c. If this forms a triangle (a + b > c), we
+    // return the answer. 
+    public int LargestPerimeter(int[] nums) {
         Array.Sort(nums);
-        List<int> allAcceptablePerimeters = new List<int>();
-        int largestPerimeter = 0;
-        for (int i = 0; i < nums.Length-2; i++)
+        for (int i = nums.Length - 3; i >= 0; i--)
         {
-            int a = nums[i];
-            int b = nums[i+1];
-            int c = nums[i+2];
-            if (a + b > c)
+            if (nums[i]+nums[i+1]>nums[i+2])
             {
-                int perimeter = a + b + c;
-                allAcceptablePerimeters.Add(perimeter);
+                return nums[i]+nums[i+1]+nums[i+2];
             }
         }
-            if (allAcceptablePerimeters.Count() > 0)
-            {
-                largestPerimeter = allAcceptablePerimeters.Max();
-            } 
-            return largestPerimeter;
+        return 0;
     }
 }
