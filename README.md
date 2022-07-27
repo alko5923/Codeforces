@@ -9,5 +9,7 @@ Here is a list of the Leetcode problems solved. They can all be found on the Lee
 3. [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
 4. [Subtract the Product and Sum of Digits of an Integer](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)
 5. [Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/)
+6. [Find Nearest Point That Has the Same X or Y Coordinate](https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/)
+
 
 

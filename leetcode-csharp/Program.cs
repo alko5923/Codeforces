@@ -4,9 +4,13 @@
     {
         static void Main(string[] args)
         {
-            SolutionLargestPerimeter solution = new SolutionLargestPerimeter();
-            int[] nums = new int[] {1,2,1};
-            int result = solution.LargestPerimeter(nums);
+            SolutionNearestPoint solution = new SolutionNearestPoint();
+            int x = 3, y = 4;
+            int [][] points = 
+            {
+                new int[] {2, 3}
+            };
+            int result = solution.NearestValidPoint(x, y, points);
             Console.WriteLine(result);
         }
     }
