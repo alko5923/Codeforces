@@ -1,12 +1,12 @@
-﻿namespace HelloWorld
+﻿namespace LeetcodeProgrammingProblems
 {
     class Program
     {
         static void Main(string[] args)
         {
-            SolutionDigitsInteger solution = new SolutionDigitsInteger();
-            int n = 234;
-            int result = solution.SubtractProductAndSum(n);
+            SolutionPerimeter solution = new SolutionPerimeter();
+            int[] nums = new int[] {2, 1, 2};
+            int result = solution.LargestPerimeter(nums);
             Console.WriteLine(result);
         }
     }
