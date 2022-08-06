@@ -4,14 +4,16 @@
     {
         static void Main(string[] args)
         {
-            SolutionNearestPoint solution = new SolutionNearestPoint();
-            int x = 3, y = 4;
-            int [][] points = 
-            {
-                new int[] {2, 3}
-            };
-            int result = solution.NearestValidPoint(x, y, points);
-            Console.WriteLine(result);
+            TreeNode? leftLeaf = new TreeNode(3, null, null);
+            TreeNode? rightLeaf = new TreeNode(4, null, null);
+            TreeNode? left = new TreeNode(2, leftLeaf, rightLeaf);
+            TreeNode? rightRightLeaf = new TreeNode(6, null, null);
+            TreeNode? right = new TreeNode(5, null, rightRightLeaf);
+            TreeNode? root = new TreeNode(1, left, right);
+
+            SolutionBinaryTree solution = new SolutionBinaryTree();
+            solution.Flatten(root);
+            Console.WriteLine(root);
         }
     }
 }
